@@ -1,3 +1,5 @@
+<<<<<<< HEAD:main.js
+<<<<<<< HEAD:main.js
 const {app, BrowserWindow} = require('electron');
 const path = require('path');
 const locals = {};
@@ -28,3 +30,7 @@ app.on('window-all-closed', function() {
     app.quit();
   }
 });
+=======
+>>>>>>> parent of 3a0e939... setup modules:app.js
+=======
+>>>>>>> parent of 3a0e939... setup modules:app.js
