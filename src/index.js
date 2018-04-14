@@ -1,3 +1,3 @@
-const MainWindow = require('assets/MainWindow.js');
+const MainWindow = require('./components/MainWindow.js');
 
 const mainWindow = new MainWindow(window);

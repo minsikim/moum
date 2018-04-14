@@ -9,7 +9,6 @@ app.on('ready', ()=>{
     width: 1600,
     height: 900,
     fullscreenWindowTitle: true,
-    icon: './'
   });
 
   mainWindow.loadURL(path.join('file://', __dirname, 'src','index.html'));
@@ -18,4 +17,14 @@ app.on('ready', ()=>{
   mainWindow.on('ready-to-show', () => {
     mainWindow.show();
   })
+
+  mainWindow.on('closed', function() {
+    mainWindow = null;
+  });
+});
+
+app.on('window-all-closed', function() {
+  if (process.platform != 'darwin') {
+    app.quit();
+  }
 });
